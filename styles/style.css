@@ -174,14 +174,69 @@ img.active {
     height: 20px;
 }
 
-
-
-
+/* ----------------------- Choix ----------------------- */
 
 .choix {
     grid-area: 3 / 1 / 4 / 3;
-    background-color: violet;
+    background: #222;
+    color: #f1f1f1;
+    border: 1px solid #000;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
+.titre-choix {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: Playfair Display, 'Times New Roman', Times, serif;
+}
+.choix p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+.go-galerie {
+    font-size: 22px;
+    display: block;
+    margin: 20px auto 0;
+    width: 300px;
+    padding: 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 5px;
+    background: #222;
+    color: #f1f1f1;
+}
+.cont-medias {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+}
+.media {
+    margin: 10px 0;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media img {
+    width: 25px;
+}
+.go-galerie:hover {
+    transition: all 0.2 ease-in-out;
+    background: #f1f1f1;
+    color: #222;
+}
+
+/* ----------------------- Contact ----------------------- */
+
 .contact {
     grid-area: 3 / 3 / 4 / 4;
     background-color: lightskyblue;
